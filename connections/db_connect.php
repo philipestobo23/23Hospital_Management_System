@@ -5,7 +5,7 @@ function db_connection(){
     $host = "localhost";
     $username = "root";
     $password = "";
-    $database = "";
+    $database = "hospital_management_db";
     
     
     $conn = new mysqli($host, $username, $password, $database);
@@ -15,7 +15,7 @@ function db_connection(){
         die ('Failed to connect with server');
     }else{
     
-       return $conn;
+    return $conn;
     }
 
 
